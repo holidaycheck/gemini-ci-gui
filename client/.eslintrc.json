@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true
+    },
+
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "plugins": [ "eslint-plugin-react", "eslint-plugin-import" ],
+
+    "rules": {
+        "no-extra-parens": "off",
+        "jsx-quotes": [ "error", "prefer-single" ],
+
+        "react/jsx-no-bind": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-no-undef": "error",
+        "react/prop-types": [ "error", { "ignore": [ "children" ] } ],
+        "react/no-unknown-property": "error",
+        "react/no-unused-prop-types": "error",
+        "react/react-in-jsx-scope": "error",
+        "react/self-closing-comp": ["error", { "component": true, "html": false }],
+        "react/no-direct-mutation-state": "error",
+        "react/require-render-return": "error",
+
+        "import/named": "error",
+        "import/default": "error",
+        "import/namespace": "error",
+        "import/no-commonjs": "error",
+        "import/no-named-as-default": "error",
+        "import/export": "error",
+        "import/no-duplicates": "error",
+        "import/imports-first": [ "error", "absolute-first" ],
+        "import/no-namespace": "error",
+        "import/extensions": [ "error", { "js": "never", "jsx": "always", "json": "always" } ],
+        "import/newline-after-import": "error",
+        "import/order": [ "error", {
+            "groups": [
+                [ "builtin", "external" ],
+                [ "internal", "index", "sibling", "parent" ]
+            ],
+            "newlines-between": "always"
+        } ]
+    },
+
+    "settings": {
+        "import/ignore": [ "node_modules", "\\.json$" ],
+        "import/resolver": { "node": { "extensions": [ ".js", ".jsx", ".json" ] } }
+    }
+}

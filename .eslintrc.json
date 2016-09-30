@@ -1,0 +1,7 @@
+{
+    "extends": "holidaycheck/es2015",
+
+    "parserOptions": {
+        "sourceType": "script"
+    }
+}

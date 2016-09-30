@@ -1,0 +1,21 @@
+{
+    "plugins": [ "ava" ],
+    "rules": {
+        "max-statements": [ "error", 20 ],
+        "ava/assertion-arguments": "error",
+        "ava/no-identical-title": "error",
+        "ava/no-ignored-test-files": "error",
+        "ava/no-nested-tests": "error",
+        "ava/no-only-test": "error",
+        "ava/no-skip-assert": "error",
+        "ava/no-skip-test": "error",
+        "ava/no-todo-implementation": "error",
+        "ava/no-todo-test": "error",
+        "ava/no-unknown-modifiers": "error",
+        "ava/test-title": [ "error", "always" ],
+        "ava/use-t-well": "error",
+        "ava/use-t": "error",
+        "ava/use-test": "error",
+        "ava/use-true-false": "error"
+    }
+}

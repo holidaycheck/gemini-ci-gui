@@ -1,0 +1,16 @@
+[
+    {
+        "hash": "any-result-hash",
+        "type": "error",
+        "referencePath": "/reference/image.png",
+        "suitePath": [ "foo", "bar" ],
+        "browserId": "firefox",
+        "stateName": "plain",
+        "error": {
+            "name": "NoRefImageError"
+        },
+        "images": {
+            "actual": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEUAAID+/v4nXkIGAAAAAWJLR0QB/wIt3gAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTAtMDNUMTc6NTQ6MDIrMDI6MDDhcbhPAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTEwLTAzVDE3OjU0OjAyKzAyOjAwkCwA8wAAAABJRU5ErkJggg=="
+        }
+    }
+]

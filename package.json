@@ -1,0 +1,61 @@
+{
+  "name": "gemini-ci-gui",
+  "version": "0.0.0-dev",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "BABEL_ENV=build rollup -c rollup.config.js",
+    "lint": "eslint --ext .js --ext .jsx .",
+    "test:unit": "NODE_ENV=test BABEL_ENV=test ava 'test/**/*Spec.js'",
+    "pretest": "npm run lint",
+    "test": "npm run test:unit"
+  },
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "body-parser": "1.15.2",
+    "chart.js": "1.1.1",
+    "express": "4.14.0",
+    "gemini-json-reporter": "1.0.0",
+    "material-ui": "0.16.0-rc2",
+    "mkdirp": "0.5.1",
+    "ramda": "0.22.1",
+    "react": "15.3.1",
+    "react-chartjs": "0.8.0",
+    "react-dom": "15.3.1",
+    "react-tap-event-plugin": "1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "babel-core": "6.3.26",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-es2015-rollup": "1.2.0",
+    "babel-preset-react": "6.11.1",
+    "babel-register": "6.3.x",
+    "enzyme": "2.4.1",
+    "eslint": "3.6.1",
+    "eslint-config-holidaycheck": "0.10.0",
+    "eslint-plugin-ava": "3.1.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-react": "6.3.0",
+    "react-addons-test-utils": "15.3.2",
+    "rollup": "0.35.10",
+    "rollup-plugin-babel": "2.6.1",
+    "rollup-plugin-commonjs": "4.1.0",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-replace": "1.1.1",
+    "rollup-plugin-uglify": "1.0.1",
+    "sinon": "1.17.6",
+    "sinon-as-promised": "4.0.2",
+    "supertest": "2.0.0"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": {
+      "babelrc": true,
+      "presets": [
+        "es2015",
+        "react"
+      ]
+    }
+  }
+}
