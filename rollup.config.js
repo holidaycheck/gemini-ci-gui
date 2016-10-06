@@ -12,7 +12,7 @@ const env = process.env.NODE_ENV || 'development';
 
 const plugins = [
     nodeResolve({ jsnext: true, main: true, browser: true, extensions: [ '.js', '.jsx', '.json' ] }),
-    commonjs({ exclude: [ 'node_modules/moment/**' ] }),
+    commonjs(),
     replace({
         'process.env.NODE_ENV': JSON.stringify(env)
     }),
