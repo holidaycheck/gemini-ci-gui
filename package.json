@@ -11,7 +11,8 @@
   ],
   "author": "Mathias Schreck <schreck.mathias@gmail.com>",
   "license": "MIT",
-  "main": "server/index.js",
+  "main": "server/createServer.js",
+  "bin": "server/index.js",
   "scripts": {
     "build": "BABEL_ENV=build rollup -c rollup.config.js",
     "lint": "eslint --ext .js --ext .jsx .",
