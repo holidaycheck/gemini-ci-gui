@@ -2,6 +2,15 @@
   "name": "gemini-ci-gui",
   "version": "0.0.0-dev",
   "description": "",
+  "keywords": [
+    "gemini",
+    "gemini-gui",
+    "gui",
+    "regression",
+    "screenshot"
+  ],
+  "author": "Mathias Schreck <schreck.mathias@gmail.com>",
+  "license": "MIT",
   "main": "server/index.js",
   "scripts": {
     "build": "BABEL_ENV=build rollup -c rollup.config.js",
@@ -58,5 +67,9 @@
         "react"
       ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/holidaycheck/gemini-ci-gui.git"
   }
 }
