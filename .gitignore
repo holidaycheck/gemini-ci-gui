@@ -3,3 +3,4 @@
 /.nyc_output
 /dist
 *.log
+.DS_Store
