@@ -12,7 +12,7 @@ const env = process.env.NODE_ENV || 'development';
 
 const plugins = [
     nodeResolve({ jsnext: true, main: true, browser: true, extensions: [ '.js', '.jsx', '.json' ] }),
-    commonjs(),
+    commonjs({ namedExports: { './node_modules/react-chartjs/index.js': [ 'Pie' ] } }),
     replace({
         'process.env.NODE_ENV': JSON.stringify(env)
     }),
