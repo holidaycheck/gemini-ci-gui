@@ -13,13 +13,20 @@
   "license": "MIT",
   "main": "server/createServer.js",
   "bin": "server/index.js",
+  "files": [
+      "server/",
+      "dist/",
+      "LICENSE",
+      "README.md"
+  ],
   "scripts": {
     "build": "BABEL_ENV=build rollup -c rollup.config.js",
     "lint": "eslint --ext .js --ext .jsx .",
     "test:unit": "NODE_ENV=test BABEL_ENV=test ava 'test/**/*Spec.js'",
     "pretest": "npm run lint",
     "test": "npm run test:unit",
-    "start": "node ./server"
+    "start": "node ./server",
+    "prepublish": "NODE_ENV=production npm run build"
   },
   "dependencies": {
     "bluebird": "3.4.6",
