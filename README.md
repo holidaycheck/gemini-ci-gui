@@ -5,9 +5,7 @@
 
 CI GUI for [Gemini](https://gemini-testing.github.io/).
 
-The `gemini-ci-gui` is meant to work with an already existing test report. Most commonly the report will be created by a CI/CD pipeline, but `gemini-ci-gui` doesn’t really care about how the report is generated.
-
-Reports must be generated with the [`gemini-json-reporter` plugin](https://github.com/holidaycheck/gemini-json-reporter).
+The `gemini-ci-gui` is meant to work with an already existing test report. Most commonly the report will be created by a CI/CD pipeline, but `gemini-ci-gui` doesn’t really care about how the report is generated, but must the format that is generated with the [`gemini-json-reporter` plugin](https://github.com/holidaycheck/gemini-json-reporter).
 
 Main features are:
 
